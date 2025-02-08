@@ -1,0 +1,26 @@
+# 🔥 Performance and smooth rendering
+enable_audio_bell no
+scrollback_lines 10000
+input_delay 3
+sync_to_monitor no
+
+# 🔡 Font settings (Fira Code, size 16, line spacing 1.5)
+font_family FiraCode Nerd Font Mono
+font_size 16
+modify_font cell_height 150%
+
+# 🔳 Transparency (adjust if needed)
+background_opacity 0.85
+
+# 🖥️ Window management shortcuts
+map cmd+shift+[ previous_tab
+map cmd+shift+] next_tab
+map cmd+shift+l close_tab
+map cmd+shift+n new_tab
+
+# 🛠️ Text rendering improvements
+allow_hyperlinks yes
+shell_integration enabled
+bold_font auto
+italic_font auto
+bold_italic_font auto

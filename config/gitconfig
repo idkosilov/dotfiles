@@ -1,0 +1,54 @@
+[core]
+  excludesfile = ~/.gitignore_global
+  attributesFile = ~/.gitattributes_global
+  autocrlf = input
+  safecrlf = warn
+[credential]
+  helper = osxkeychain
+[http]
+  postBuffer = 524288000
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[commit]
+  gpgsign = true
+[push]
+  default = simple
+[fetch]
+  # Prune branches that no longer exist remote. Same for tags.
+  prune = true
+  pruneTags = true
+[user]
+  useConfigOnly = true
+[diff]
+  indentHeuristic = on
+  noprefix = true
+  colorMoved = default
+[interactive]
+  diffFilter = "delta --color-only --features=interactive --syntax-theme=$SOBOLE_SYNTAX_THEME"
+[diff "nodiff"]
+  command = true
+[submodule]
+  recurse = true
+  fetchJobs = 0
+
+# Aliases:
+[alias]
+  publish = "!git push origin $(git symbolic-ref --short HEAD) -u"
+  push-fork = "!git push fork $(git symbolic-ref --short HEAD) -u"
+  pull-fork = "!git pull fork $(git symbolic-ref --short HEAD)"
+  main = "!git checkout main > /dev/null 2>&1 || git checkout master"
+  patch = "!git --no-pager diff"
+  ch = "!git checkout $(echo \"$1\" | sd -s 'sobolevn:' '') #"
+
+[diff "generated"]
+  binary = true
+[pull]
+  rebase = false
+[init]
+  defaultBranch = master
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+  path = ~/.gitconfig_local
