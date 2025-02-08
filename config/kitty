@@ -3,11 +3,18 @@ enable_audio_bell no
 scrollback_lines 10000
 input_delay 3
 sync_to_monitor no
+scrollback_lines 10000
+scrollback_pager less
+scroll_on_output no
+scroll_on_input no
+mouse_hide_wait 1.0
 
 # 🔡 Font settings (Fira Code, size 16, line spacing 1.5)
 font_family FiraCode Nerd Font Mono
 font_size 16
-modify_font cell_height 150%
+modify_font cell_height 175%
+enable_ligatures always
+allow_hyperlinks yes
 
 # 🔳 Transparency (adjust if needed)
 background_opacity 0.85
