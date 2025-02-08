@@ -1,0 +1,5 @@
+- shell:
+    - command: macos/settings.sh
+      description: Apply macOS customizations
+      stdout: true
+      stderr: true

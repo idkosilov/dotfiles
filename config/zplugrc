@@ -5,8 +5,10 @@ zplug 'Aloxaf/fzf-tab', depth:1
 
 # Sorted in order of appearance (new at the bottom):
 zplug 'zsh-users/zsh-syntax-highlighting', depth:1
-zplug "zsh-users/zsh-autosuggestions"
-
+zplug 'zsh-users/zsh-autosuggestions'
+zplug 'rupa/z'
+zplug "ohmyzsh/ohmyzsh", as:plugin, use:plugins/docker
+zplug "ohmyzsh/ohmyzsh", as:plugin, use:plugins/ssh-agent
 
 # Install plugins if there are plugins that have not been installed:
 if ! zplug check; then
