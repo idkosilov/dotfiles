@@ -18,4 +18,5 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup plugins
 require('lazy').setup({
     require 'plugins.neo-tree',
+    require 'plugins.lazygit',
 })

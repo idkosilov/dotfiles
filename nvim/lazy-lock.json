@@ -1,0 +1,11 @@
+{
+  "hererocks": { "branch": "master", "commit": "c9c5444dea1e07e005484014a8231aa667be30b6" },
+  "image.nvim": { "branch": "master", "commit": "6ffafab2e98b5bda46bf227055aa84b90add8cdc" },
+  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
+  "lazygit.nvim": { "branch": "main", "commit": "adc37c5a6d7d6e8d0a039f08f3c7837971a1c77a" },
+  "neo-tree.nvim": { "branch": "v3.x", "commit": "5d172e8315444dbc32867d1c7b04d8e7e68ec4e1" },
+  "nui.nvim": { "branch": "main", "commit": "53e907ffe5eedebdca1cd503b00aa8692068ca46" },
+  "nvim-web-devicons": { "branch": "master", "commit": "402377242b04be3f4f0f3720bd952df86e946c30" },
+  "nvim-window-picker": { "branch": "main", "commit": "0dfef64eaf063e1cd27983ab11a30e7bc5b74fac" },
+  "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" }
+}
