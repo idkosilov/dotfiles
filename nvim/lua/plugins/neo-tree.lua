@@ -23,7 +23,6 @@ return {
       end,
       keys = {
         {'<leader>ke', ':Neotree toggle<CR>', silent = true, desc = 'Toggle File Explorer' }, 
-        {'<leader>kc', ':Neotree float git_status<CR>', silent = true, desc = 'Git Status' }
       }
     },
   },
@@ -85,20 +84,6 @@ return {
           ['x'] = 'cut_to_clipboard',
           ['p'] = 'paste_from_clipboard',
           ['q'] = 'close_window',
-        },
-      },
-      git_status = {
-        window = {
-          position = 'float',
-          mappings = {
-            ['gs'] = 'git_status',
-            ['ga'] = 'git_add_file',
-            ['gu'] = 'git_unstage_file',
-            ['gr'] = 'git_revert_file',
-            ['gc'] = 'git_commit',
-            ['gp'] = 'git_push',
-            ['gg'] = 'git_commit_and_push',
-          },
         },
       },
     }) 
