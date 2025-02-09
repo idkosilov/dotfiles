@@ -18,9 +18,9 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', opts)
 vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
 
 -- 🖊 Save & quit
-vim.keymap.set('n', '<leader>s', '<cmd>w<CR>', opts) -- Save file
-vim.keymap.set('n', '<leader>q', '<cmd>q<CR>', opts) -- Quit file
-vim.keymap.set('n', '<leader>Q', '<cmd>qa!<CR>', opts) -- Quit all without saving
+vim.keymap.set('n', '<C-s>', '<cmd>w<CR>', opts) -- Save file
+vim.keymap.set('n', '<C-q>', '<cmd>q<CR>', opts) -- Quit file
+vim.keymap.set('n', '<C-Q>', '<cmd>qa!<CR>', opts) -- Quit all without saving
 vim.api.nvim_create_autocmd("InsertLeave", { pattern = "*", command = "silent! w" }) -- Auto-save on leaving insert mode
 
 -- 🗂 Buffers

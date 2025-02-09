@@ -15,7 +15,7 @@ return {
   -- order to load the plugin when the command is run for the first time
   keys = {
     -- Run LazyGit command and set background to transparent
-    { '<leader>lg', '<cmd>LazyGit<cr><cmd>hi LazyGitFloat guibg=NONE guifg=NONE<cr><cmd>setlocal winhl=NormalFloat:LazyGitFloat<cr>', desc = 'LazyGit' },
+    { '<leader>kg', '<cmd>LazyGit<cr><cmd>hi LazyGitFloat guibg=NONE guifg=NONE<cr><cmd>setlocal winhl=NormalFloat:LazyGitFloat<cr>', desc = 'LazyGit' },
   },
   config = function()
     vim.g.lazygit_floating_window_winblend = 0 -- transparency of floating window (0-100)
