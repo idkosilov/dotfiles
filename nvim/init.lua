@@ -24,4 +24,5 @@ require('lazy').setup({
     require 'plugins.debug',
     require 'plugins.misc',
     require 'plugins.telescope',
+    require 'plugins.treesitter',
 })
