@@ -20,7 +20,6 @@ require('lazy').setup({
     require 'plugins.neo-tree',
     require 'plugins.lazygit',
     require 'plugins.comment',
-    require 'plugins.debug',
     require 'plugins.misc',
     require 'plugins.telescope',
     require 'plugins.treesitter',

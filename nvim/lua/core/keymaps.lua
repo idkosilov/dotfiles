@@ -41,12 +41,6 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', opts)
 vim.keymap.set('n', '<C-j>', '<C-w>j', opts)
 vim.keymap.set('n', '<C-k>', '<C-w>k', opts)
 
--- 🏷 Tabs
-vim.keymap.set('n', '<leader>tn', ':tabnew<CR>', opts) -- Open new tab
-vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', opts) -- Close current tab
-vim.keymap.set('n', '<leader>tl', ':tabnext<CR>', opts) -- Go to next tab
-vim.keymap.set('n', '<leader>th', ':tabprev<CR>', opts) -- Go to previous tab
-
 -- 🔠 Text formatting & editing
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts) -- Toggle line wrapping
 vim.keymap.set('n', '<leader>j', '*``cgn', opts) -- Replace  under cursor
