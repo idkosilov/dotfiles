@@ -49,4 +49,6 @@ cask "telegram"
 cask "yandex-music"
 # Kitty terminal
 cask "kitty"
+# Obsidian markdown editor
+cask "obsidian"
 
