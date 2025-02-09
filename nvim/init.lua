@@ -22,4 +22,6 @@ require('lazy').setup({
     require 'plugins.comment',
     require 'plugins.database',
     require 'plugins.debug',
+    require 'plugins.misc',
+    require 'plugins.telescope',
 })
