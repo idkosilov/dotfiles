@@ -30,6 +30,8 @@ brew "mpv"
 brew "neovim"
 # Next-gen compiler infrastructure
 brew "llvm"
+# New grep
+brew "ripgrep"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever

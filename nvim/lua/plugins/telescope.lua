@@ -44,6 +44,7 @@ return {
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
 
+    vim.keymap.set('n', '<leader>f', builtin.live_grep, { desc = '[R]egex Grep search' })
     vim.keymap.set('n', '<leader>s', builtin.lsp_document_symbols, { desc = '[S]earch [S]ymbols (classes, functions, methods)' })
     vim.keymap.set('n', '<leader>e', builtin.oldfiles, { desc = '[E]dit recent files' })
     vim.keymap.set('n', '<leader>F', builtin.find_files, { desc = '[F]ind files' })  end,
