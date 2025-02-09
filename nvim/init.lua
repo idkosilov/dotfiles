@@ -1,5 +1,6 @@
 require 'core.keymaps'
 require 'core.options'
+require 'core.snippets'
 
 -- Install package manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -24,5 +25,7 @@ require('lazy').setup({
     require 'plugins.telescope',
     require 'plugins.treesitter',
     require 'plugins.lualine',
-    require 'plugins.theme'
+    require 'plugins.theme',
+    require 'plugins.autocompletions',
+    require 'plugins.lsp.init'
 })
