@@ -31,6 +31,7 @@ run_dotbot () {
     -c "$config" $ARGS
 }
 
-run_dotbot 'steps/dependencies.yml' || true
-run_dotbot 'steps/terminal.yml' || true
-run_dotbot 'steps/system.yml' || true
+#run_dotbot 'steps/dependencies.yml' || true
+#run_dotbot 'steps/terminal.yml' || true
+#run_dotbot 'steps/system.yml' || true
+run_dotbot 'steps/nvim.yml' || true

@@ -22,7 +22,6 @@ background_opacity 0.85
 # 🖥️ Window management shortcuts
 map cmd+shift+[ previous_tab
 map cmd+shift+] next_tab
-map cmd+shift+l close_tab
 map cmd+shift+n new_tab
 
 # 🛠️ Text rendering improvements
