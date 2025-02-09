@@ -12,7 +12,7 @@ mouse_hide_wait 1.0
 # 🔡 Font settings (Fira Code, size 16, line spacing 1.5)
 font_family FiraCode Nerd Font Mono
 font_size 16
-modify_font cell_height 175%
+#modify_font cell_height 175%
 enable_ligatures always
 allow_hyperlinks yes
 

@@ -27,5 +27,7 @@ require('lazy').setup({
     require 'plugins.lualine',
     require 'plugins.theme',
     require 'plugins.autocompletions',
-    require 'plugins.lsp.init'
+    require 'plugins.lsp.init',
+    require 'plugins.debug',
+    'ThePrimeagen/vim-be-good',
 })

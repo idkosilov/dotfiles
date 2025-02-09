@@ -22,7 +22,7 @@ return {
         }
       end,
       keys = {
-        {'<leader>ke', ':Neotree toggle<CR>', silent = true, desc = 'Toggle File Explorer' }, 
+        {'<leader>ke', ':Neotree toggle<CR>', silent = true, desc = 'Toggle File Explorer' },
       }
     },
   },
@@ -35,9 +35,8 @@ return {
     require('neo-tree').setup({
       close_if_last_window = false,
       enable_git_status = true,
-      enable_diagnostics = true, 
-
-      filesystem = { 
+      enable_diagnostics = true,
+      filesystem = {
         filtered_items = {
           visible = false,
           hide_dotfiles = false,
@@ -86,7 +85,6 @@ return {
           ['q'] = 'close_window',
         },
       },
-    }) 
-
+    })
   end,
 }
