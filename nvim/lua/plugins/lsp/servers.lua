@@ -2,22 +2,16 @@ local M = {}
 
 M.servers = {
   lua_ls = {
-    -- cmd = {...},
-    -- filetypes { ...},
-    -- capabilities = {},
+    -- Configuration for the Lua language server.
     settings = {
       Lua = {
         runtime = { version = 'LuaJIT' },
         workspace = {
           checkThirdParty = false,
-          -- Tells lua_ls where to find all the Lua files that you have loaded
-          -- for your neovim configuration.
           library = {
             '${3rd}/luv/library',
             unpack(vim.api.nvim_get_runtime_file('', true)),
           },
-          -- If lua_ls is really slow on your computer, you can try this instead:
-          -- library = { vim.env.VIMRUNTIME },
         },
         completion = {
           callSnippet = 'Replace',
@@ -29,15 +23,19 @@ M.servers = {
   },
   dockerls = {},
   docker_compose_language_service = {},
-  basedpyright = {
+  -- Configuration for pylsp with mypy support:
+  pylsp = {
     settings = {
-      basedpyright = {
-        disableOrganizeImports = true,
-        disableLanguageServices = false,
-        analysis = {
-          diagnosticMode = 'openFilesOnly',
-          useLibraryCodeForTypes = true,
-          autoImportCompletions = true,
+      pylsp = {
+        plugins = {
+          pyflakes = { enabled = false },
+          pycodestyle = { enabled = false },
+          autopep8 = { enabled = false },
+          yapf = { enabled = false },
+          mccabe = { enabled = false },
+          pylsp_mypy = { enabled = false },
+          pylsp_black = { enabled = false },
+          pylsp_isort = { enabled = false },
         },
       },
     },
