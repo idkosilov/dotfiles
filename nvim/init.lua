@@ -25,9 +25,12 @@ require('lazy').setup({
     require 'plugins.telescope',
     require 'plugins.treesitter',
     require 'plugins.lualine',
+    require 'plugins.gitsigns',
     require 'plugins.theme',
     require 'plugins.autocompletions',
     require 'plugins.lsp.init',
+    require 'plugins.indent-blankline',
     require 'plugins.debug',
+    require 'plugins.alpha',
     'ThePrimeagen/vim-be-good',
 })
