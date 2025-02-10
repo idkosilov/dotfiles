@@ -17,7 +17,7 @@ enable_ligatures always
 allow_hyperlinks yes
 
 # 🔳 Transparency (adjust if needed)
-background_opacity 0.85
+background_opacity 0.65
 
 # 🖥️ Window management shortcuts
 map cmd+shift+[ previous_tab

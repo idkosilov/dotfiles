@@ -30,7 +30,7 @@ brew "mpv"
 brew "neovim"
 # Next-gen compiler infrastructure
 brew "llvm"
-# New grep
+# For telescope grep
 brew "ripgrep"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
@@ -42,6 +42,8 @@ brew "zoxide"
 brew "zplug"
 # TMUX terminal multiplexer
 brew "tmux"
+# Node needed for language servers
+brew "node"
 # App to build and share containerised applications and microservices
 cask "orbstack"
 cask "font-fira-code-nerd-font"
