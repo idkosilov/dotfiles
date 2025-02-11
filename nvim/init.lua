@@ -32,5 +32,6 @@ require('lazy').setup({
     require 'plugins.indent-blankline',
     require 'plugins.debug',
     require 'plugins.alpha',
+    require 'plugins.leetcode',
     'ThePrimeagen/vim-be-good',
 })
