@@ -17,11 +17,12 @@ return {
   config = function()
     local dap = require 'dap'
     local dapui = require 'dapui'
+    local dap_python = require 'dap-python'
 
     require('mason-nvim-dap').setup {
       automatic_setup = true,
       automatic_installation = true,
-      ensure_installed = {'debugpy'},
+      ensure_installed = { 'debugpy' },
     }
 
     dapui.setup {
@@ -29,22 +30,21 @@ return {
         {
           elements = {
             {
-              id = "repl",
+              id = 'repl',
               size = 0.8,
             },
             {
-              id = "console",
+              id = 'console',
               size = 0.2,
             },
           },
-          position = "bottom",
+          position = 'bottom',
           size = 10,
-        }
-      }
+        },
+      },
     }
 
-    require("nvim-dap-virtual-text").setup()
-
+    require('nvim-dap-virtual-text').setup()
 
     -- Basic debugging keymaps, feel free to change to your liking!
     vim.keymap.set('n', '<F5>', dap.continue, { desc = 'Debug: Start/Continue' })
@@ -63,6 +63,19 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
-    require('dap-python').setup("uv")
+    dap_python.setup 'uv'
+
+    local root_dir = vim.fs.root(vim.fn.expand '%:p', { '.git', 'pyproject.toml', 'setup.py' }) or vim.fn.getcwd()
+
+    table.insert(dap.configurations.python, {
+      type = 'python',
+      request = 'launch',
+      name = 'file with project PYTHONPATH',
+      program = '${file}',
+      cwd = root_dir,
+      env = {
+        PYTHONPATH = root_dir .. ':' .. (os.getenv 'PYTHONPATH' or ''),
+      },
+    })
   end,
 }
