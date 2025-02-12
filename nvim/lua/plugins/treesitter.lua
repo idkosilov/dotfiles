@@ -35,10 +35,10 @@ return {
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = '<C-n>',        
-          node_incremental = '<C-n>',       
-          scope_incremental = '<C-s>',     
-          node_decremental = '<C-m>',     
+          init_selection = '<C-n>',
+          node_incremental = '<C-n>',
+          scope_incremental = '<C-s>',
+          node_decremental = '<C-m>',
         },
       },
       textobjects = {
@@ -86,5 +86,9 @@ return {
         },
       },
     }
+    -- Enable Treesitter-based folding
+    vim.opt.foldmethod = 'expr'
+    vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+    vim.opt.foldlevel = 99 -- Start with all folds open
   end,
 }
