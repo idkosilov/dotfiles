@@ -4,3 +4,15 @@ alias cat='bat --paging never --decorations never --plain'
 alias afk='pmset displaysleepnow'
 alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
+# === Listing files (eza) ===
+alias ls='eza --icons --group-directories-first'
+alias ll='eza --icons --group-directories-first -l'
+alias la='eza --icons --group-directories-first -la'
+alias lt='eza --icons --group-directories-first --tree --level=2'
+alias lta='eza --icons --group-directories-first --tree --level=2 -a'
+alias ltree='eza --icons --group-directories-first --tree'
+
+# === Searching (ripgrep) ===
+alias rg='rg --smart-case --hidden'
+alias rgi='rg --no-ignore --hidden'  # search including ignored files
+alias rgf='rg --files | rg'  # search in filenames
