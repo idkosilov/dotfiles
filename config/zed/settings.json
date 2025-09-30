@@ -1,4 +1,21 @@
 {
+  "auto_install_extensions": {
+    "html": true,
+    "toml": true,
+    "git-firefly": true,
+    "sql": true,
+    "make": true,
+    "lua": true,
+    "jetbrains-new-ui-icons": true,
+    "graphql": true,
+    "postgres-context-server": true,
+    "night-owlz": true,
+    "qml": true,
+    "html-jinja": true,
+    "dockerfile": true,
+    "docker-compose": false
+  },
+
   // ========================================
   // AI
   // ========================================
