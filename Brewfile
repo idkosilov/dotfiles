@@ -27,6 +27,5 @@ cask "karabiner-elements"
 cask "lens"
 cask "zed"
 cask "postman"
-mas "Delete Apps", id: 1033808943
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541

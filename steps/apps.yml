@@ -10,5 +10,5 @@
       path: config/karabiner/karabiner.json
       create: true
     ~/.config/wezterm.lua:
-      path: config/wezterm.lua
+      path: config/wezterm/wezterm.lua
       create: true
