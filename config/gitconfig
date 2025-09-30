@@ -3,7 +3,6 @@
   attributesFile = ~/.gitattributes_global
 	autocrlf = input
 	safecrlf = warn
-  pager = delta
 [credential]
   helper = osxkeychain
 [http]
