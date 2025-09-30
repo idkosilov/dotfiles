@@ -54,7 +54,7 @@ source "$HOME/.shell/.std"  # should be the first one
 source "$HOME/.shell/.exports"
 source "$HOME/.shell/.aliases"
 source "$HOME/.shell/.functions"
-source "$HOME/.shell/.external"
+# source "$HOME/.shell/.external"
 source "$HOME/.shell/.completions"
 
 # === Local variables and overrides ===
@@ -62,3 +62,5 @@ source "$HOME/.shell/.completions"
 if [[ -f "$HOME/.shell_env_local" ]]; then
   source "$HOME/.shell_env_local"
 fi
+
+. "$HOME/.local/bin/env"

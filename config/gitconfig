@@ -22,6 +22,8 @@
   pruneTags = true
 [user]
   useConfigOnly = true
+	email = idkosilov@gmail.com
+	name = Ivan Kosilov
 [submodule]
 	recurse = true
 	fetchJobs = 0

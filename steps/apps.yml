@@ -1,10 +1,14 @@
+---
 - link:
-    "~/.config/zed/settings.json"
+    ~/.config/zed/settings.json:
       path: config/zed/settings.json
       create: true
-    "~/.config/zed/keymap.json"
+    ~/.config/zed/keymap.json:
       path: config/zed/keymap.json
       create: true
-    "~/.config/karabiner/karabiner.json"
+    ~/.config/karabiner/karabiner.json:
       path: config/karabiner/karabiner.json
+      create: true
+    ~/.config/wezterm.lua:
+      path: config/wezterm.lua
       create: true
