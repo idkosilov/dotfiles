@@ -24,7 +24,7 @@ Before installation, you need:
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/idkosilov/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 bash ./install
 ```
