@@ -1,0 +1,31 @@
+[core]
+  excludesfile = ~/.gitignore_global
+  attributesFile = ~/.gitattributes_global
+	autocrlf = input
+	safecrlf = warn
+  pager = delta
+[credential]
+  helper = osxkeychain
+[http]
+	postBuffer = 524288000
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[commit]
+  gpgsign = true
+[push]
+  default = simple
+[fetch]
+  # Prune branches that no longer exist remote. Same for tags.
+  prune = true
+  pruneTags = true
+[user]
+  useConfigOnly = true
+[submodule]
+	recurse = true
+	fetchJobs = 0
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+  path = ~/.gitconfig_local
