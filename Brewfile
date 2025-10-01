@@ -16,7 +16,7 @@ brew "zoxide"
 brew "zplug"
 brew "zsh"
 brew "mas"
-brew "ripgrep
+brew "ripgrep"
 brew "eza"
 cask "font-fira-code-nerd-font"
 cask "amneziavpn"
