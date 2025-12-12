@@ -43,4 +43,3 @@ _fzf_complete_realpath () {
     echo "$realpath" | fold -w "$FZF_PREVIEW_COLUMNS"
   fi
 } 
-. "$HOME/.cargo/env"
