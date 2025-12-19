@@ -32,6 +32,7 @@ run_dotbot () {
     -v
 }
 
+bash 'macos-settings.sh' || true
 run_dotbot 'steps/terminal.yml' || true
 run_dotbot 'steps/dependencies.yml' || true
 run_dotbot 'steps/apps.yml' || true
