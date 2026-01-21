@@ -68,3 +68,4 @@ fi
 export SDKROOT=$(xcrun --show-sdk-path)
 export CFLAGS="-isysroot $SDKROOT -resource-dir=$(clang -print-resource-dir)"
 export CXXFLAGS="-isysroot $SDKROOT -resource-dir=$(clang -print-resource-dir)"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
